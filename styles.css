@@ -1,0 +1,138 @@
+/* Body styles */
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2015/07/09/22/45/tree-838667_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.rayen{
+    padding: -5px; 
+}
+
+/* Navigation menu styles */
+ul.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Background color for the navbar */
+    justify-content: center; /* Center align the navbar items */
+    align-items: center; /* Vertically align the navbar items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+
+ul.navbar li {
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px; /* Wider padding for better touch/click interaction */
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    border-bottom: 2px solid transparent; /* Add an underline effect */
+}
+
+ul.navbar li a:hover {
+    background-color: #f3971b; /* Background color on hover */
+    color: black;
+    border-radius: 5px; /* Rounded corners on hover */
+    border-bottom: 2px solid #017bf5; /* Highlight the underline */
+}
+
+/* Add some spacing between navbar items */
+ul.navbar li:not(:last-child) {
+    margin-right: 0px;
+}
+nav li {
+    margin-right: 20px;
+    margin-left: 50px;
+    
+}
+
+/* Section styles */
+section {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Home section content */
+.home-content h1 {
+    font-size: 2rem;
+    color: #f3971b;
+}
+
+/* About section styles */
+.about-content h3 {
+    color: #f3971b;
+}
+.about-content ul {
+    list-style-type: square;
+    padding-left: 0;
+}
+
+/* Button styles */
+.buttons button {
+    background-color: #f3971b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.buttons button:hover {
+    background-color: #017bf5;
+}
+
+/* Keyframe animations */
+@keyframes scaleAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(2); }
+    100% { transform: scale(1); }
+}
+
+/* Heading animation */
+h1 {
+    animation: scaleAnimation 3s ease-in-out infinite;
+    margin-top: 100px;
+    size: 20;
+    color: gray;
+}
+/* List item styles */
+li {
+    color: white;
+    margin-top: 40px;
+}
+
+/* Keyframe animation for element */
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Element animation */
+.element {
+    animation: fadeInAnimation 2s ease-in-out;
+}
+
+/* Paragraph styles */
+p {
+    color: #615c55;
+}
+.logo {
+
+    height:50px;
+    width:90px;
+    margin-top:50px;
+}
+.navbar {
+    border: 5px double #f3971b;
+  }
